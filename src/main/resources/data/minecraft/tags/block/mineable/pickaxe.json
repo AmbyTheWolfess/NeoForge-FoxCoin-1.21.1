@@ -12,6 +12,7 @@
     "foxcoin:platinumblock",
     "foxcoin:rawplatinumblock",
     "foxcoin:platinumore",
-    "foxcoin:deepslateplatinumore"
+    "foxcoin:deepslateplatinumore",
+    "foxcoin:charcoalblock"
   ]
 }
