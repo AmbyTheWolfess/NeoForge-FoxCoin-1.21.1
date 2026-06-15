@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:blasting",
+  "catergory":"misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "rosegoldingot",
+  "ingredient": {
+    "item": "foxcoin:rawrosegold"
+  },
+  "result": {
+    "count": 1,
+    "id": "foxcoin:rosegoldingot"
+  }
+
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:blasting",
+  "catergory":"misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "silveringot",
+  "ingredient": {
+    "item": "foxcoin:rawsilver"
+  },
+  "result": {
+    "count": 1,
+    "id": "foxcoin:silveringot"
+  }
+
+}

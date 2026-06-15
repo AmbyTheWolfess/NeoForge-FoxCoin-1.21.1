@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "catergory": "misc",
+  "key": {
+    "B": {
+      "item": "foxcoin:rawrosegold"
+    }
+  },
+  "pattern": [
+    "BBB",
+    "BBB",
+    "BBB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "foxcoin:rawrosegoldblock"
+  }
+
+}

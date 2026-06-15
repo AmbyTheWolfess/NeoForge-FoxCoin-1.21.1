@@ -1,0 +1,42 @@
+{
+  "item.foxcoin.coppercoin": "Copper Coin",
+  "item.foxcoin.silvercoin": "Silver Coin",
+  "item.foxcoin.goldcoin": "Gold Coin",
+  "item.foxcoin.rosegoldcoin": "Rosegold Coin",
+  "item.foxcoin.platinumcoin": "Platinum Coin",
+  "item.foxcoin.netheritecoin": "Netherite Coin",
+
+  "item.foxcoin.rawsilver": "Raw Silver",
+  "item.foxcoin.rawrosegold": "Raw Rosegold",
+  "item.foxcoin.rawplatinum": "Raw Platinum",
+
+  "item.foxcoin.silveringot": "Silver Ingot",
+  "item.foxcoin.rosegoldingot": "Rosegold Ingot",
+  "item.foxcoin.platinumingot": "Platinum Ingot",
+
+  "item.foxcoin.silvernugget": "Silver Nugget",
+  "item.foxcoin.rosegoldnugget": "Rosegold Nugget",
+  "item.foxcoin.platinumnugget": "Platinum Nugget",
+
+  "item.foxcoin.rosegoldcarrot": "Rosegold Carrot",
+  "item.foxcoin.rosegoldapple": "Rosegold Apple",
+  "item.foxcoin.enchantedrosegoldapple": "Enchanted Rosegold Apple",
+
+  "block.foxcoin.silverblock": "Block of Silver",
+  "block.foxcoin.rosegoldblock": "Block of Rosegold",
+  "block.foxcoin.platinumblock": "Block of Platinum",
+
+  "block.foxcoin.silverore": "Silver Ore",
+  "block.foxcoin.platinumore": "Platinum Ore",
+
+  "block.foxcoin.deepslatesilverore": "Deepslate Silver Ore",
+  "block.foxcoin.deepslateplatinumore": "Deepslate Platinum Ore",
+
+  "block.foxcoin.rawsilverblock": "Block of Raw Silver",
+  "block.foxcoin.rawrosegoldblock": "Block of Raw Rosegold",
+  "block.foxcoin.rawplatinumblock": "Block of Raw Platinum",
+
+  "block.foxcoin.charcoalblock": "Block of Charcoal",
+
+  "creativetab.foxcoin": "FoxCoin"
+}

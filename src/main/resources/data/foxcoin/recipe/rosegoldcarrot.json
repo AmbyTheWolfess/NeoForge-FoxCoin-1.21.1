@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "catergory": "misc",
+  "key": {
+    "B": {
+      "item": "foxcoin:rosegoldnugget"
+    },
+    "X": {
+      "item": "minecraft:carrot"
+    }
+  },
+  "pattern": [
+    "BBB",
+    "BXB",
+    "BBB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "foxcoin:rosegoldcarrot"
+  }
+
+}
