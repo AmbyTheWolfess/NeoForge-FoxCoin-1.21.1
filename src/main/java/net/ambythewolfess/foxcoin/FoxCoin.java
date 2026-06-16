@@ -60,7 +60,7 @@ public class FoxCoin
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.COPPERCOIN);
-            event.accept(ModItems.SIVLERCOIN);
+            event.accept(ModItems.SILVERCOIN);
             event.accept(ModItems.GOLDCOIN);
             event.accept(ModItems.ROSEGOLDCOIN);
             event.accept(ModItems.PLATINUMCOIN);

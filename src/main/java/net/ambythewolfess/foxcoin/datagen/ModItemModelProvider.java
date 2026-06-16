@@ -14,7 +14,7 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         basicItem(ModItems.COPPERCOIN.get());
-        basicItem(ModItems.SIVLERCOIN.get());
+        basicItem(ModItems.SILVERCOIN.get());
         basicItem(ModItems.GOLDCOIN.get());
         basicItem(ModItems.ROSEGOLDCOIN.get());
         basicItem(ModItems.PLATINUMCOIN.get());

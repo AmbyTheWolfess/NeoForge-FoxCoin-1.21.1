@@ -20,7 +20,7 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.foxcoin"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.COPPERCOIN);
-                        output.accept(ModItems.SIVLERCOIN);
+                        output.accept(ModItems.SILVERCOIN);
                         output.accept(ModItems.GOLDCOIN);
                         output.accept(ModItems.ROSEGOLDCOIN);
                         output.accept(ModItems.PLATINUMCOIN);

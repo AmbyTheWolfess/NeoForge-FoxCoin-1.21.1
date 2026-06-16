@@ -11,7 +11,7 @@ public class ModItems {
 
     public static final DeferredItem<Item> COPPERCOIN = ITEMS.register("coppercoin",
             ()-> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> SIVLERCOIN = ITEMS.register("silvercoin",
+    public static final DeferredItem<Item> SILVERCOIN = ITEMS.register("silvercoin",
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> GOLDCOIN = ITEMS.register("goldcoin",
             ()-> new Item(new Item.Properties()));

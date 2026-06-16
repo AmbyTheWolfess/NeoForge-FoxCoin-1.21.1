@@ -7,6 +7,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 
@@ -28,6 +29,30 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         List<ItemLike> PLATINUM_SMELTABLES = List.of(ModItems.RAWPLATINUM,
                ModBlocks.PLATINUMORE, ModBlocks.DEEPSLATEPLATINUMORE);
 
+        //Coins
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Items.COPPER_INGOT),
+                RecipeCategory.MISC,ModItems.COPPERCOIN)
+                        .unlockedBy("has_copper", has(Items.COPPER_INGOT)).save(recipeOutput);
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModItems.SILVERINGOT.get()),
+                        RecipeCategory.MISC,ModItems.SILVERCOIN)
+                .unlockedBy("has_silver", has(ModItems.SILVERINGOT.get())).save(recipeOutput);
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Items.GOLD_INGOT),
+                        RecipeCategory.MISC,ModItems.GOLDCOIN)
+                .unlockedBy("has_gold", has(Items.GOLD_INGOT)).save(recipeOutput);
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModItems.ROSEGOLDINGOT.get()),
+                        RecipeCategory.MISC,ModItems.ROSEGOLDCOIN)
+                .unlockedBy("has_rosegold", has(ModItems.ROSEGOLDINGOT.get())).save(recipeOutput);
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModItems.PLATINUMINGOT.get()),
+                        RecipeCategory.MISC,ModItems.PLATINUMCOIN)
+                .unlockedBy("has_platinum", has(ModItems.PLATINUMINGOT.get())).save(recipeOutput);
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Items.NETHERITE_INGOT),
+                        RecipeCategory.MISC,ModItems.NETHERITECOIN)
+                .unlockedBy("has_netherite", has(Items.NETHERITE_INGOT)).save(recipeOutput);
 
         //Blocks
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SILVERBLOCK.get())
@@ -191,6 +216,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,Items.CHARCOAL, 9)
                 .requires(ModBlocks.CHARCOALBLOCK)
                 .unlockedBy("has_charcoalblock", has(ModBlocks.CHARCOALBLOCK)).save(recipeOutput,"charcoal_from_charcoalblock");
+
+
+
+
 
         //Smelting
         oreSmelting(recipeOutput, SILVER_SMELTABLES, RecipeCategory.MISC, ModItems.SILVERINGOT.get(),.5f,200,"silver");
