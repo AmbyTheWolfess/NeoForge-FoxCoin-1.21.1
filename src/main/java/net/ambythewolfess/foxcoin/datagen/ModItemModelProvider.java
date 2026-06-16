@@ -35,6 +35,5 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.ROSEGOLDCARROT.get());
         basicItem(ModItems.ROSEGOLDAPPLE.get());
         basicItem(ModItems.ENCHANTEDROSEGOLDAPPLE.get());
-
     }
 }
