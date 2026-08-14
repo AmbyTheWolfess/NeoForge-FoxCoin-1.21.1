@@ -77,6 +77,15 @@ public class FoxCoin
             event.accept(ModItems.SILVERNUGGET);
             event.accept(ModItems.ROSEGOLDNUGGET);
             event.accept(ModItems.PLATINUMNUGGET);
+
+            event.accept(ModItems.SILVERSHEET);
+            event.accept(ModItems.ROSEGOLDSHEET);
+            event.accept(ModItems.PLATINUMSHEET);
+            event.accept(ModItems.NETHERITESHEET);
+
+            event.accept(ModItems.CRUSHEDRAWSILVER);
+            event.accept(ModItems.CRUSHEDRAWROSEGOLD);
+            event.accept(ModItems.CRUSHEDRAWPLATINUM);
         }
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
             event.accept(ModBlocks.SILVERBLOCK);

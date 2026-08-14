@@ -1,5 +1,9 @@
 package net.ambythewolfess.foxcoin.datagen;
 
+import com.simibubi.create.api.data.recipe.BaseRecipeProvider;
+import com.simibubi.create.content.kinetics.crusher.CrushingRecipe;
+import com.simibubi.create.content.kinetics.mixer.MixingRecipe;
+import com.simibubi.create.content.processing.recipe.HeatCondition;
 import net.ambythewolfess.foxcoin.block.ModBlocks;
 import net.ambythewolfess.foxcoin.item.ModItems;
 import net.minecraft.core.HolderLookup;
@@ -21,12 +25,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     @Override
     protected void buildRecipes(RecipeOutput recipeOutput) {
-        List<ItemLike> SILVER_SMELTABLES = List.of(ModItems.RAWSILVER,
+        List<ItemLike> SILVER_SMELTABLES = List.of(ModItems.RAWSILVER, ModItems.CRUSHEDRAWSILVER,
                 ModBlocks.SILVERORE, ModBlocks.DEEPSLATESILVERORE);
 
-        List<ItemLike> ROSEGOLD_SMELTABLES = List.of(ModItems.RAWROSEGOLD);
+        List<ItemLike> ROSEGOLD_SMELTABLES = List.of(ModItems.RAWROSEGOLD, ModItems.CRUSHEDRAWROSEGOLD);
 
-        List<ItemLike> PLATINUM_SMELTABLES = List.of(ModItems.RAWPLATINUM,
+        List<ItemLike> PLATINUM_SMELTABLES = List.of(ModItems.RAWPLATINUM, ModItems.CRUSHEDRAWPLATINUM,
                ModBlocks.PLATINUMORE, ModBlocks.DEEPSLATEPLATINUMORE);
 
         //Coins
@@ -161,22 +165,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_platinumnugget", has(ModItems.PLATINUMNUGGET)).save(recipeOutput, "platinum_from_nugget");
 
         //Rosegold
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RAWROSEGOLD.get(),4)
-                .pattern("BB")
-                .pattern("BA")
-                .define('B', Items.RAW_COPPER)
-                .define('A', Items.RAW_GOLD)
-                .unlockedBy("has_rawcopper", has(Items.RAW_COPPER))
-                .unlockedBy("has_rawgold", has(Items.RAW_GOLD)).save(recipeOutput);
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ROSEGOLDINGOT.get(), 4)
-                .pattern("BB")
-                .pattern("BA")
-                .define('B', Items.COPPER_INGOT)
-                .define('A', Items.GOLD_INGOT)
-                .unlockedBy("has_copper_ingot", has(Items.COPPER_INGOT))
-                .unlockedBy("has_gold_ingot", has(Items.GOLD_INGOT)).save(recipeOutput);
-
         //Food recipes
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ROSEGOLDCARROT.get())
                 .pattern("BBB")
@@ -217,8 +205,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(ModBlocks.CHARCOALBLOCK)
                 .unlockedBy("has_charcoalblock", has(ModBlocks.CHARCOALBLOCK)).save(recipeOutput,"charcoal_from_charcoalblock");
 
-
-
+        //Create Recipes
 
 
         //Smelting

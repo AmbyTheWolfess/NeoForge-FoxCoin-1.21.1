@@ -2,6 +2,7 @@ package net.ambythewolfess.foxcoin.datagen;
 
 
 import net.ambythewolfess.foxcoin.FoxCoin;
+import net.ambythewolfess.foxcoin.datagen.recipes.*;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -30,6 +31,13 @@ public class DataGenerators {
                 List.of(new LootTableProvider.SubProviderEntry(ModBlockLootTableProvider::new, LootContextParamSets.BLOCK)), lookupProvider));
         generator.addProvider(event.includeServer(), new ModRecipeProvider(packOutput, lookupProvider));
 
+        generator.addProvider(event.includeClient(), new FCCrushingGen(packOutput, lookupProvider));
+        generator.addProvider(event.includeClient(), new FCMixingRecipeGen(packOutput, lookupProvider));
+        generator.addProvider(event.includeClient(), new FCPressingRecipeGen(packOutput, lookupProvider));
+        generator.addProvider(event.includeClient(), new FCSequencedAssemblyRecipeGen(packOutput, lookupProvider));
+        generator.addProvider(event.includeClient(), new FCMechanicalCraftingRecipeGen(packOutput, lookupProvider));
+        generator.addProvider(event.includeClient(), new FCCompactingRecipeGen(packOutput, lookupProvider));
+
         BlockTagsProvider blockTagsProvider = new ModBlockTagProvider(packOutput, lookupProvider, existingFileHelper);
         generator.addProvider(event.includeServer(), blockTagsProvider);
         generator.addProvider(event.includeServer(), new ModItemTagProvider(packOutput, lookupProvider, blockTagsProvider.contentsGetter(), existingFileHelper));
@@ -40,5 +48,8 @@ public class DataGenerators {
         generator.addProvider(event.includeClient(),new ModBlockStateProvider(packOutput, existingFileHelper));
 
         generator.addProvider(event.includeServer(), new ModDatapackProvider(packOutput, lookupProvider));
+
+
+
     }
 }

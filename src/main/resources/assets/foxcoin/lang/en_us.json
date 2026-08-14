@@ -18,6 +18,15 @@
   "item.foxcoin.rosegoldnugget": "Rosegold Nugget",
   "item.foxcoin.platinumnugget": "Platinum Nugget",
 
+  "item.foxcoin.crushedrawsilver": "Crushed Raw Silver",
+  "item.foxcoin.crushedrawrosegold": "Crushed Raw RoseGold",
+  "item.foxcoin.crushedrawplatinum": "Crushed Raw Platinum",
+
+  "item.foxcoin.silversheet": "Silver Sheet",
+  "item.foxcoin.rosegoldsheet": "Rosegold Sheet",
+  "item.foxcoin.platinumsheet": "Platinum Sheet",
+  "item.foxcoin.netheritesheet": "Netherite Sheet",
+
   "item.foxcoin.rosegoldcarrot": "Rosegold Carrot",
   "item.foxcoin.rosegoldapple": "Rosegold Apple",
   "item.foxcoin.enchantedrosegoldapple": "Enchanted Rosegold Apple",

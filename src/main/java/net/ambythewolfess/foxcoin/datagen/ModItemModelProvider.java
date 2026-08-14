@@ -24,6 +24,15 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.RAWROSEGOLD.get());
         basicItem(ModItems.RAWPLATINUM.get());
 
+        basicItem(ModItems.CRUSHEDRAWSILVER.get());
+        basicItem(ModItems.CRUSHEDRAWROSEGOLD.get());
+        basicItem(ModItems.CRUSHEDRAWPLATINUM.get());
+
+        basicItem(ModItems.SILVERSHEET.get());
+        basicItem(ModItems.ROSEGOLDSHEET.get());
+        basicItem(ModItems.PLATINUMSHEET.get());
+        basicItem(ModItems.NETHERITESHEET.get());
+
         basicItem(ModItems.SILVERINGOT.get());
         basicItem(ModItems.ROSEGOLDINGOT.get());
         basicItem(ModItems.PLATINUMINGOT.get());

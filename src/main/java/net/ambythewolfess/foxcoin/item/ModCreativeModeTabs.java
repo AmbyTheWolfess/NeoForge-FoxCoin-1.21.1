@@ -38,6 +38,15 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.RAWROSEGOLD);
                         output.accept(ModItems.RAWPLATINUM);
 
+                        output.accept(ModItems.CRUSHEDRAWSILVER);
+                        output.accept(ModItems.CRUSHEDRAWROSEGOLD);
+                        output.accept(ModItems.CRUSHEDRAWPLATINUM);
+
+                        output.accept(ModItems.SILVERSHEET);
+                        output.accept(ModItems.ROSEGOLDSHEET);
+                        output.accept(ModItems.PLATINUMSHEET);
+                        output.accept(ModItems.NETHERITESHEET);
+
                         output.accept(ModItems.ROSEGOLDCARROT);
                         output.accept(ModItems.ROSEGOLDAPPLE);
                         output.accept(ModItems.ENCHANTEDROSEGOLDAPPLE);

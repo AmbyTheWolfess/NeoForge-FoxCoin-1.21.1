@@ -30,6 +30,22 @@ public class ModItems {
     public static final DeferredItem<Item> RAWROSEGOLD = ITEMS.register("rawrosegold",
             ()-> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> CRUSHEDRAWSILVER = ITEMS.register("crushedrawsilver",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> CRUSHEDRAWROSEGOLD = ITEMS.register("crushedrawrosegold",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> CRUSHEDRAWPLATINUM = ITEMS.register("crushedrawplatinum",
+            ()-> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> SILVERSHEET = ITEMS.register("silversheet",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> ROSEGOLDSHEET = ITEMS.register("rosegoldsheet",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> PLATINUMSHEET = ITEMS.register("platinumsheet",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> NETHERITESHEET = ITEMS.register("netheritesheet",
+            ()-> new Item(new Item.Properties()));
+
     public static final DeferredItem<Item> SILVERINGOT = ITEMS.register("silveringot",
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> ROSEGOLDINGOT = ITEMS.register("rosegoldingot",
