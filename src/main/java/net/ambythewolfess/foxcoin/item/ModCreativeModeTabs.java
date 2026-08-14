@@ -15,7 +15,7 @@ public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TAB =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, FoxCoin.MOD_ID);
 
-    public static final Supplier<CreativeModeTab> FOXCOIN = CREATIVE_MODE_TAB.register("foxcoin_tab",
+    public static final Supplier<CreativeModeTab> FOXCOIN = CREATIVE_MODE_TAB.register("kitunecoin_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.NETHERITECOIN.get()))
                     .title(Component.translatable("creativetab.foxcoin"))
                     .displayItems((itemDisplayParameters, output) -> {

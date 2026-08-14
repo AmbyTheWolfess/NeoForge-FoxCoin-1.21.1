@@ -1,5 +1,6 @@
 package net.ambythewolfess.foxcoin.datagen;
 
+import com.simibubi.create.AllItems;
 import com.simibubi.create.api.data.recipe.BaseRecipeProvider;
 import com.simibubi.create.content.kinetics.crusher.CrushingRecipe;
 import com.simibubi.create.content.kinetics.mixer.MixingRecipe;
@@ -34,29 +35,29 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                ModBlocks.PLATINUMORE, ModBlocks.DEEPSLATEPLATINUMORE);
 
         //Coins
-        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Items.COPPER_INGOT),
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(AllItems.COPPER_SHEET),
                 RecipeCategory.MISC,ModItems.COPPERCOIN)
-                        .unlockedBy("has_copper", has(Items.COPPER_INGOT)).save(recipeOutput);
+                        .unlockedBy("has_copper_sheet", has(AllItems.COPPER_SHEET)).save(recipeOutput);
 
-        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModItems.SILVERINGOT.get()),
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModItems.SILVERSHEET.get()),
                         RecipeCategory.MISC,ModItems.SILVERCOIN)
-                .unlockedBy("has_silver", has(ModItems.SILVERINGOT.get())).save(recipeOutput);
+                .unlockedBy("has_silversheet", has(ModItems.SILVERSHEET.get())).save(recipeOutput);
 
-        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Items.GOLD_INGOT),
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(AllItems.GOLDEN_SHEET),
                         RecipeCategory.MISC,ModItems.GOLDCOIN)
-                .unlockedBy("has_gold", has(Items.GOLD_INGOT)).save(recipeOutput);
+                .unlockedBy("has_gold_sheet", has(AllItems.GOLDEN_SHEET)).save(recipeOutput);
 
-        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModItems.ROSEGOLDINGOT.get()),
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModItems.ROSEGOLDSHEET.get()),
                         RecipeCategory.MISC,ModItems.ROSEGOLDCOIN)
-                .unlockedBy("has_rosegold", has(ModItems.ROSEGOLDINGOT.get())).save(recipeOutput);
+                .unlockedBy("has_rosegoldsheet", has(ModItems.ROSEGOLDSHEET.get())).save(recipeOutput);
 
-        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModItems.PLATINUMINGOT.get()),
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModItems.PLATINUMSHEET.get()),
                         RecipeCategory.MISC,ModItems.PLATINUMCOIN)
-                .unlockedBy("has_platinum", has(ModItems.PLATINUMINGOT.get())).save(recipeOutput);
+                .unlockedBy("has_platinumsheet", has(ModItems.PLATINUMSHEET.get())).save(recipeOutput);
 
-        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Items.NETHERITE_INGOT),
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModItems.NETHERITESHEET),
                         RecipeCategory.MISC,ModItems.NETHERITECOIN)
-                .unlockedBy("has_netherite", has(Items.NETHERITE_INGOT)).save(recipeOutput);
+                .unlockedBy("has_netheritesheet", has(ModItems.NETHERITESHEET)).save(recipeOutput);
 
         //Blocks
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SILVERBLOCK.get())
@@ -164,7 +165,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('B', ModItems.PLATINUMNUGGET.get())
                 .unlockedBy("has_platinumnugget", has(ModItems.PLATINUMNUGGET)).save(recipeOutput, "platinum_from_nugget");
 
-        //Rosegold
         //Food recipes
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ROSEGOLDCARROT.get())
                 .pattern("BBB")

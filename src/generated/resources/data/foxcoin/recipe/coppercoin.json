@@ -1,7 +1,7 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": {
-    "item": "minecraft:copper_ingot"
+    "item": "create:copper_sheet"
   },
   "result": {
     "count": 1,

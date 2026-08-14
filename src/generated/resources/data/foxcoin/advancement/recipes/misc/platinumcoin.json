@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_platinum": {
+    "has_platinumsheet": {
       "conditions": {
         "items": [
           {
-            "items": "foxcoin:platinumingot"
+            "items": "foxcoin:platinumsheet"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_platinum"
+      "has_platinumsheet"
     ]
   ],
   "rewards": {

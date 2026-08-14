@@ -1,7 +1,7 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": {
-    "item": "minecraft:gold_ingot"
+    "item": "create:golden_sheet"
   },
   "result": {
     "count": 1,

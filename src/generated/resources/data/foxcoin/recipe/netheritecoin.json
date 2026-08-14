@@ -1,7 +1,7 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": {
-    "item": "minecraft:netherite_ingot"
+    "item": "foxcoin:netheritesheet"
   },
   "result": {
     "count": 1,

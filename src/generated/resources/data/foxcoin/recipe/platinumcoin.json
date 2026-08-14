@@ -1,7 +1,7 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": {
-    "item": "foxcoin:platinumingot"
+    "item": "foxcoin:platinumsheet"
   },
   "result": {
     "count": 1,
