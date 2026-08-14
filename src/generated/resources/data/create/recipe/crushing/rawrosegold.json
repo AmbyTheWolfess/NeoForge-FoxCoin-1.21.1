@@ -1,0 +1,22 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "foxcoin:rawrosegold"
+    }
+  ],
+  "processing_time": 200,
+  "results": [
+    {
+      "id": "foxcoin:crushedrawrosegold"
+    },
+    {
+      "chance": 0.5,
+      "id": "foxcoin:crushedrawrosegold"
+    },
+    {
+      "chance": 0.5,
+      "id": "create:experience_nugget"
+    }
+  ]
+}

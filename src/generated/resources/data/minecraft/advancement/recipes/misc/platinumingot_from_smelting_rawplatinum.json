@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_rawplatinum": {
+      "conditions": {
+        "items": [
+          {
+            "items": "foxcoin:rawplatinum"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:platinumingot_from_smelting_rawplatinum"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_rawplatinum"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:platinumingot_from_smelting_rawplatinum"
+    ]
+  }
+}

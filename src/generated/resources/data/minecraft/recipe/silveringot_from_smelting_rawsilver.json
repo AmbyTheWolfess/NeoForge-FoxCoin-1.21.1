@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.5,
+  "group": "silver",
+  "ingredient": {
+    "item": "foxcoin:rawsilver"
+  },
+  "result": {
+    "count": 1,
+    "id": "foxcoin:silveringot"
+  }
+}

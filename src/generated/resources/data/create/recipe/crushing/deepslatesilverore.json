@@ -1,0 +1,26 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "foxcoin:deepslatesilverore"
+    }
+  ],
+  "processing_time": 300,
+  "results": [
+    {
+      "id": "foxcoin:crushedrawsilver"
+    },
+    {
+      "chance": 0.75,
+      "id": "foxcoin:crushedrawsilver"
+    },
+    {
+      "chance": 0.75,
+      "id": "create:experience_nugget"
+    },
+    {
+      "chance": 0.125,
+      "id": "minecraft:cobbled_deepslate"
+    }
+  ]
+}

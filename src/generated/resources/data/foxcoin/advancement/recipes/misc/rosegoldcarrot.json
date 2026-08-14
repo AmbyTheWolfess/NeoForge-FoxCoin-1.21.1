@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_apple": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:carrot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_rosegoldnugget": {
+      "conditions": {
+        "items": [
+          {
+            "items": "foxcoin:rosegoldnugget"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "foxcoin:rosegoldcarrot"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_rosegoldnugget",
+      "has_apple"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "foxcoin:rosegoldcarrot"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "foxcoin:rosegoldingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "foxcoin:rosegoldsheet"
+    }
+  ]
+}

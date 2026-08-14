@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_rosegoldingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "foxcoin:rosegoldingot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "foxcoin:rosegoldnugget"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_rosegoldingot"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "foxcoin:rosegoldnugget"
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_apple": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:apple"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_rosegoldblock": {
+      "conditions": {
+        "items": [
+          {
+            "items": "foxcoin:rosegoldblock"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "foxcoin:enchantedrosegoldapple"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_rosegoldblock",
+      "has_apple"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "foxcoin:enchantedrosegoldapple"
+    ]
+  }
+}

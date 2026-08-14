@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_charcoalblock": {
+      "conditions": {
+        "items": [
+          {
+            "items": "foxcoin:charcoalblock"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:charcoal_from_charcoalblock"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_charcoalblock"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:charcoal_from_charcoalblock"
+    ]
+  }
+}

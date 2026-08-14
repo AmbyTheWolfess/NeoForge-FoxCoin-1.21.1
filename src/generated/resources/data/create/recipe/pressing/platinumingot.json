@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "foxcoin:platinumingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "foxcoin:platinumsheet"
+    }
+  ]
+}

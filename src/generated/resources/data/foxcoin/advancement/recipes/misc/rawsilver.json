@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_rawsilverblock": {
+      "conditions": {
+        "items": [
+          {
+            "items": "foxcoin:rawsilverblock"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "foxcoin:rawsilver"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_rawsilverblock"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "foxcoin:rawsilver"
+    ]
+  }
+}

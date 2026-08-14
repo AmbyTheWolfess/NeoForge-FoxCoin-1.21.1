@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.6,
+  "group": "platinum",
+  "ingredient": {
+    "item": "foxcoin:platinumore"
+  },
+  "result": {
+    "count": 1,
+    "id": "foxcoin:platinumingot"
+  }
+}

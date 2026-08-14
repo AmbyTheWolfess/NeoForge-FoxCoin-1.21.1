@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "foxcoin:silveringot"
+    }
+  ],
+  "results": [
+    {
+      "id": "foxcoin:silversheet"
+    }
+  ]
+}

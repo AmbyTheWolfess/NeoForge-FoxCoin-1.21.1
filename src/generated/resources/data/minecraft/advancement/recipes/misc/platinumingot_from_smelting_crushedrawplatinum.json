@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_crushedrawplatinum": {
+      "conditions": {
+        "items": [
+          {
+            "items": "foxcoin:crushedrawplatinum"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:platinumingot_from_smelting_crushedrawplatinum"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_crushedrawplatinum"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:platinumingot_from_smelting_crushedrawplatinum"
+    ]
+  }
+}

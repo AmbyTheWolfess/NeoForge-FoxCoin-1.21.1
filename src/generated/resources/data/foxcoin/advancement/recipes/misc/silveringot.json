@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_silverblock": {
+      "conditions": {
+        "items": [
+          {
+            "items": "foxcoin:silverblock"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "foxcoin:silveringot"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_silverblock"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "foxcoin:silveringot"
+    ]
+  }
+}

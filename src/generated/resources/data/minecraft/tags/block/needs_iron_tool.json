@@ -1,0 +1,14 @@
+{
+  "values": [
+    "foxcoin:silverblock",
+    "foxcoin:rosegoldblock",
+    "foxcoin:platinumblock",
+    "foxcoin:rawsilverblock",
+    "foxcoin:rawrosegoldblock",
+    "foxcoin:rawplatinumblock",
+    "foxcoin:silverore",
+    "foxcoin:platinumore",
+    "foxcoin:deepslatesilverore",
+    "foxcoin:deepslateplatinumore"
+  ]
+}
